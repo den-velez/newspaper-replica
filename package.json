@@ -1,0 +1,11 @@
+{
+  "name": "newspaperlayout",
+  "version": "1.0.0",
+  "description": "mockup challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "den velez den.velez@gmail.com",
+  "license": "ISC"
+}
