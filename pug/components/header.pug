@@ -1,25 +1,29 @@
 header.header
   div.header-top
     div.header-top-publicity1
-      figure
-        img(src=publicity1Img[0], alt=publicity1Img[1])
-      h3 {#{publicity1[0]}}
-      ul
-        li #{publicity1[1]}
-        li #{publicity1[2]}
-        li #{publicity1[3]}
-      ul
-        li #{publicity1[4]}
-        li #{publicity1[5]}
-        li #{publicity1[6]}
+      figure.publicity1-banner
+        img.publicity1-banner-img(src=publicity1Img[0], alt=publicity1Img[1])
+      .publicity1-texts
+        h3.publicity1-texts-title #{publicity1[0]}
+        ul.publicity1-texts-list1
+          li #{publicity1[1]}
+          li #{publicity1[2]}
+          li #{publicity1[3]}
+        ul.publicity1-texts-list2
+          li #{publicity1[4]}
+          li #{publicity1[5]}
+          li #{publicity1[6]}
     div.header-top-titles
       h1 #{headerTitles}
-      span #{headerDate}
+      div.header-top-titles-subtitles
+        div
+        span #{headerDate}
+        div
     div.header-top-publicity2
-      span
-      span
-      span
-      figure
+      span.header-top-publicity2-title #{publicity2[0]}
+      span.header-top-publicity2-textLeft #{publicity2[1]}
+      span.header-top-publicity2-textRight #{publicity2[2]} #{publicity2[3]}
+      figure.header-top-publicity2-imgBox
         img(src=publicity2Img[0], alt=publicity2Img[1])
   div.header-movies
     ul
