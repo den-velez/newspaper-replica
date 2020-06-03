@@ -1,0 +1,26 @@
+.header-sections {
+  margin: 15px 0;
+  height: 100px;
+  width: 100%;
+}
+.newspaperSections {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $colorFont2;
+  font-family: $titlesFont;
+  text-transform: uppercase;
+  &-imgBox {
+    display: flex;
+    align-items: center;
+    width: 2%;
+    img {
+      width: 100%;
+    }
+  }
+  &-title {
+    letter-spacing: -1px;
+  }
+}
