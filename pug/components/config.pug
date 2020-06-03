@@ -8,3 +8,8 @@
 -var headerSections = ["lastest","featured","automobiles","celebreties","hollywood directory","trending movies","book tickets","fans","books"]
 -var headerSectionsImgs = ["../../images/img13.png","../../images/img15.png"]
 
+mixin popularnews(image, imageName,title,title2)
+  figure 
+    img(src=image, alt=imageName)
+  span #{title}
+  span #{title2}
