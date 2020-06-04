@@ -99,7 +99,7 @@
   h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 20px;
     font-family: $mainTitle;
   }
   &-subtitles {
@@ -133,23 +133,23 @@
   &-title {
     grid-area: title;
     font-size: 16px;
-    font-family: regularFont;
+    font-family: $regularFont;
   }
   &-textLeft {
     width: 100%;
     height: 100%;
     grid-area: textLeft;
-    font-size: 14px;
+    font-size: 18px;
     font-family: $regularFont;
     text-align: center;
     border-bottom: 1px solid $bordercolor;
   }
   &-textRight {
     height: 100%;
-    padding: 0 10px;
+    padding: 4px 10px 0 10px;
     border-left: 1px solid $bordercolor;
     grid-area: textRight;
-    font-size: 7px;
+    font-size: 8px;
     font-family: $regularFont;
     border-bottom: 1px solid $bordercolor;
   }

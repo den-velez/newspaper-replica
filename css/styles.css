@@ -116,7 +116,7 @@ body {
 .header-top-titles h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 .header-top-titles-subtitles {
@@ -154,7 +154,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: title;
   font-size: 16px;
-  font-family: regularFont;
+  font-family: "Merriweather", serif;
 }
 .header-top-publicity2-textLeft {
   -ms-grid-row: 2;
@@ -162,7 +162,7 @@ body {
   width: 100%;
   height: 100%;
   grid-area: textLeft;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Merriweather", serif;
   text-align: center;
   border-bottom: 1px solid #cfcecf;
@@ -171,10 +171,10 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   height: 100%;
-  padding: 0 10px;
+  padding: 4px 10px 0 10px;
   border-left: 1px solid #cfcecf;
   grid-area: textRight;
-  font-size: 7px;
+  font-size: 8px;
   font-family: "Merriweather", serif;
   border-bottom: 1px solid #cfcecf;
 }
