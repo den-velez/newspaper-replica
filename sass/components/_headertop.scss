@@ -12,8 +12,8 @@
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 30% 40% 20%;
-  grid-column-gap: 5%;
+  grid-template-columns: 20% 40% 20%;
+  grid-column-gap: 10%;
   &-publicity1 {
     height: 100%;
     display: grid;
@@ -78,7 +78,7 @@
     font-family: $regularFont;
     li {
       padding-left: 3px;
-      font-size: 7px;
+      font-size: 8px;
     }
     li:after {
       content: "  -";
@@ -149,7 +149,7 @@
     padding: 0 10px;
     border-left: 1px solid $bordercolor;
     grid-area: textRight;
-    font-size: 5px;
+    font-size: 7px;
     font-family: $regularFont;
     border-bottom: 1px solid $bordercolor;
   }
