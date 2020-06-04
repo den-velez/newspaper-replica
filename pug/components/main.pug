@@ -22,16 +22,20 @@ main.main
       img(src=headlineImg[0], alt=headlineImg[1])
     div.headline-texts
       h3.headline-texts-caption #{headlineCaption}
-      button.headline-texts-button
-    h1.headline-texts-title #{headlineTitle}
-    p.headline-texts-text #{headlineText}
+      div.headline-texts-button
+        button
+          img(src=headlineBtnIcon[0], alt=headlineBtnIcon[1])
+    h1.headline-title #{headlineTitle}
+    p.headline-text #{headlineText}
     div.headline-author
       figure.headline-author-imgBox
         img(src=headlineAuthorImg[0], alt=headlineAuthorImg[1])
       h3.headline-author-name #{headlineAuthor}
       span.headline-author-date #{headlineDate}
-      button.headline-author-back 
-      button.headline-author-next 
+      button.headline-author-prev 
+        img(src=headlineAuthorBtnIconPrev[0], alt=headlineAuthorBtnIconPrev[1])
+      button.headline-author-next
+        img(src=headlineAuthorBtnIconNext[0], alt=headlineAuthorBtnIconNext[1])
   section.mostpopular
     div
       span
