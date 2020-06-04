@@ -16,7 +16,7 @@ body {
 .header {
   margin-top: 15px;
   width: 100%;
-  height: 200px;
+  height: 210px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
@@ -25,9 +25,10 @@ body {
 
 .header-top {
   width: 100%;
-  height: 100%;
+  height: 80px;
   display: grid;
   align-items: center;
+  grid-template-rows: 1fr;
   grid-template-columns: 20% 40% 20%;
   grid-column-gap: 10%;
 }
@@ -44,7 +45,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  justify-content: flex-end;
+  align-items: center;
 }
 .publicity1-banner-img {
   width: 80%;
@@ -53,7 +54,7 @@ body {
 
 .publicity1-texts {
   width: 100%;
-  height: 90%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -104,13 +105,13 @@ body {
 }
 
 .header-top-titles {
-  height: 90%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #cfcecf;
-  border-bottom: 1px solid #cfcecf;
+  border-top: 2px solid #cfcecf;
+  border-bottom: 2px solid #cfcecf;
 }
 .header-top-titles h1 {
   letter-spacing: 3px;
@@ -248,6 +249,7 @@ body {
 }
 
 .header-sections {
+  padding: 0 5px;
   margin: 15px 0;
   height: 30px;
   width: 100%;
@@ -281,7 +283,7 @@ body {
   width: 100%;
   height: 740px;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 24% 49% 25%;
   justify-content: center;
   grid-column-gap: 10px;
 }
@@ -551,7 +553,7 @@ body {
 }
 
 .mostPopular {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -577,11 +579,14 @@ body {
 }
 .mostPopular-publicity-texts-button {
   width: 120px;
+  margin-left: 5px;
   margin-top: 20px;
   height: 40px;
+  border: 2px solid #9c9d9e;
   background-color: transparent;
   letter-spacing: -1;
   font-size: 16px;
+  font-weight: 600;
 }
 .mostPopular-publicity-imgBox {
   position: absolute;
