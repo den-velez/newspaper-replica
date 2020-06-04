@@ -5,6 +5,7 @@ $bordercolor: #cfcecf;
 $colorAlternativo: #fee5f4;
 $colorAlternativo2: #ffbada;
 $colorPublicity: #daf0fe;
+$relevantsPublicity: "../../images/img4.png";
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Roboto+Condensed:wght@400;700&family=Yanone+Kaffeesatz:wght@600&display=swap");
 
@@ -21,5 +22,6 @@ $regularFont: "Merriweather", serif;
 }
 body {
   margin: 0 auto;
-  width: 1200px;
+  width: 1000px;
+  font-family: $titlesFont;
 }

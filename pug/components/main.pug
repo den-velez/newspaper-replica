@@ -1,21 +1,22 @@
-main
+main.main
   section.relevants
     article.relevants-media
-      h2
-      p
-      button
-      figure
-        img
-    articule.relevant-written
-      figure
-        img(src="", alt="")
-      div
-        span
-        span
-        span
-      p
-      button
+      h2.relevants-media-title #{relevants1Title}
+      p.relevants-media-text #{relevants1Text}
+      button.relevants-media-button #{relevantsButtons[0]}
+      figure.relevants-media-imgBox
+        img(src=relevants1img[0], alt=relevants1img[1])
+    articule.relevants-written
+      figure.relevants-written-imgBox
+        img(src=relevants2img[0], alt=relevants2img[1])
+      div.relevants-written-texts
+        span.relevants-written-texts-title1
+        span.relevants-written-texts-title2
+        span.relevants-written-texts-date
+      p #{relevants2Text}
+      button.relevants-written-button #{relevantsButtons[1]}
     div.relevants-publicity
+      img(src=relevantsPublicityImg[0], alt=relevantsPublicityImg[1])
   section.headlines
     figure
       img(src="", alt="")
