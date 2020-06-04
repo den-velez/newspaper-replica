@@ -347,7 +347,6 @@ body {
 .relevants-media .relevants-media-imgBox img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 .relevants-written {
   padding: 10px;
