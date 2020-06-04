@@ -36,18 +36,20 @@ main.main
         img(src=headlineAuthorBtnIconPrev[0], alt=headlineAuthorBtnIconPrev[1])
       button.headline-author-next
         img(src=headlineAuthorBtnIconNext[0], alt=headlineAuthorBtnIconNext[1])
-  section.mostpopular
-    div
-      span
-      span
-      button
-      figure
-        img(src="", alt="")
-    +popularnews
-    +popularnews
-    +popularnews
-    div
-      h3
-      span
-      input(type="email", name="")
-      button
+  section.mostPopular
+    .mostPopular-publicity
+      .mostPopular-publicity-texts
+        span.mostPopular-publicity-texts-1 #{popularPublicity[0]}
+        span.mostPopular-publicity-texts-2 #{popularPublicity[1]}
+        button.mostPopular-publicity-texts-button #{popularPublicity[2]}
+      figure.mostPopular-publicity-imgBox
+        img(src=popularPublicityImg[0], alt=popularPublicityImg[1])
+    div.mostPopular-popularnews-container
+      +popularnews(popularNew1[0],popularNew1[1],popularNew1[2])
+      +popularnews(popularNew2[0],popularNew2[1],popularNew2[2],popularNew2[3]  )
+      +popularnews(popularNew3[0],popularNew3[1],popularNew3[2])
+    div.subscribe
+      h3.subscribe-title #{subscribe[0]}
+      span.subscribe-text #{subscribe[1]}
+      input(type="email", name="", placeholder="Email Address")
+      button.subscribe-button #{subscribe[2]}

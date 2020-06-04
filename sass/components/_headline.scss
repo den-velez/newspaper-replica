@@ -1,13 +1,14 @@
 .headline {
   width: 100%;
-  height: 100%;
-  padding: 10px;
+  // height: 100%;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
-  border: 2px solid $colorAlternativo2;
+  justify-content: space-evenly;
+  // border: 2px solid $colorAlternativo2;
   &-imgBox {
     width: 100%;
-    height: 40%;
+    height: 50%;
     img {
       object-fit: cover;
       width: 100%;
@@ -16,7 +17,7 @@
   }
   &-texts {
     padding: 10px;
-    height: 5%;
+    height: 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,16 +49,17 @@
     }
   }
   &-title {
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 30px;
   }
   &-text {
-    margin: 10px 0;
+    margin: 0px 0;
     letter-spacing: 1px;
     color: $colorFont2;
   }
   &-author {
     margin-top: 10px;
+    width: 95%;
     height: 15%;
     display: grid;
     grid-template-columns: 20% 65% 10% 10%;

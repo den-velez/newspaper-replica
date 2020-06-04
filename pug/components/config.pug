@@ -28,8 +28,19 @@
 -var headlineAuthorImg = ["../../images/img6.png","reporter picture"]
 -var headlineAuthorBtnIconPrev= ["../../images/img7.png", "previous icon"]
 -var headlineAuthorBtnIconNext= ["../../images/img8.png", "next icon"]
+
+-var popularNew1 = ["../../images/img5.png", "picture","The brand new Hollywood horror movie is here!"]
+-var popularNew2 = ["../../images/img10.png", "picture", "The smoking hero of ","Vela and Gobson!"]
+-var popularNew3 = ["../../images/img9.png", "picture","Elizabeth Taylor's Life In Of The Camera"]
+
+-var popularPublicity = ["GOOD TIMES NOW", "Every Thursdat at 8:00pm", "BOOK NOW"]
+-var popularPublicityImg= ["../../images/img14.png", "publicity"]
+
+-var subscribe = ["Subscribe to all the news", "Never miss the lastest updates", "sing me up"]
 mixin popularnews(image, imageName,title,title2)
-  figure 
-    img(src=image, alt=imageName)
-  span #{title}
-  span #{title2}
+  .popularnews
+    figure.popularnews-imgBox
+      img(src=image, alt=imageName)
+    .popularnews-title  
+      span.popularnews-title-1 #{title}
+      span.popularnews-title-2 #{title2}

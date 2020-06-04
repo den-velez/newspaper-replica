@@ -1,8 +1,8 @@
 .relevants {
-  // width: 100%;
-  // height: 100%;
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-rows: 40% 40% 20%;
+  grid-template-rows: 45% 45% 10%;
   &-media {
     padding: 10px;
     display: grid;
@@ -107,7 +107,7 @@
     }
   }
   &-publicity {
-    height: 100%;
+    // height: 100%;
     width: 100%;
     img {
       width: 100%;
