@@ -1,11 +1,13 @@
 .relevants {
-  width: 100%;
-  height: 40%;
+  // width: 100%;
+  // height: 100%;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
   &-media {
     padding: 10px;
     display: grid;
     align-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 20% 70% 10%;
     grid-template-areas: "titleR imgR" "textR imgR" "buttonR imgR";
     border-top: 2px solid $colorFont2;
@@ -15,7 +17,6 @@
       text-transform: capitalize;
       font-size: 20px;
       letter-spacing: -1px;
-
       font-family: $titlesFont;
       grid-area: titleR;
     }
@@ -50,25 +51,47 @@
     }
   }
   &-written {
+    padding: 10px;
     display: grid;
+    align-items: center;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 40% 20%;
+    grid-template-rows: 50% 30% 20%;
     grid-template-areas: "imgR2 textsR2" "textR2 textR2" "buttonR2 buttonR2";
     &-imgBox {
+      width: 100%;
+      height: 100%;
       grid-area: imgR2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 90%;
+        object-fit: contain;
+      }
     }
     &-texts {
       grid-area: textsR2;
 
       &-title1 {
+        text-transform: capitalize;
+        font-size: 20px;
+        letter-spacing: -1px;
+        font-family: $titlesFont;
       }
       &-title2 {
+        font-family: $regularFont;
+        margin-left: 5px;
+        font-weight: 300;
       }
       &-date {
+        margin-top: 8px;
+        display: block;
+        color: $colorFont2;
       }
     }
     &-text {
       grid-area: textR2;
+      color: $colorFont2;
     }
     &-button {
       width: 80%;

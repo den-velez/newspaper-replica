@@ -10,27 +10,28 @@ main.main
       figure.relevants-written-imgBox
         img(src=relevants2img[0], alt=relevants2img[1])
       div.relevants-written-texts
-        span.relevants-written-texts-title1
-        span.relevants-written-texts-title2
-        span.relevants-written-texts-date
-      p #{relevants2Text}
+        span.relevants-written-texts-title1 #{relevants2Title[0]}
+        span.relevants-written-texts-title2 #{relevants2Title[1]}
+        span.relevants-written-texts-date #{relevants2Title[2]}
+      p.relevants-written-text #{relevants2Text}
       button.relevants-written-button #{relevantsButtons[1]}
     div.relevants-publicity
       img(src=relevantsPublicityImg[0], alt=relevantsPublicityImg[1])
-  section.headlines
-    figure
-      img(src="", alt="")
-    div
-      h3
-      button
-    h1
-    p
-    div
-      figure
-        h3
-        span
-        button
-        button
+  section.headline
+    figure.headline-imgBox
+      img(src=headlineImg[0], alt=headlineImg[1])
+    div.headline-texts
+      h3.headline-texts-caption #{headlineCaption}
+      button.headline-texts-button
+    h1.headline-texts-title #{headlineTitle}
+    p.headline-texts-text #{headlineText}
+    div.headline-author
+      figure.headline-author-imgBox
+        img(src=headlineAuthorImg[0], alt=headlineAuthorImg[1])
+      h3.headline-author-name #{headlineAuthor}
+      span.headline-author-date #{headlineDate}
+      button.headline-author-back 
+      button.headline-author-next 
   section.mostpopular
     div
       span

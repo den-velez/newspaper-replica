@@ -273,21 +273,21 @@ body {
 
 .main {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   justify-content: center;
 }
 
 .relevants {
-  width: 100%;
-  height: 40%;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
 }
 .relevants-media {
   padding: 10px;
   display: grid;
   align-items: center;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 20% 70% 10%;
   grid-template-areas: "titleR imgR" "textR imgR" "buttonR imgR";
   border-top: 2px solid #9c9d9e;
@@ -339,26 +339,54 @@ body {
   height: 100%;
 }
 .relevants-written {
+  padding: 10px;
   display: grid;
+  align-items: center;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 40% 20%;
+  grid-template-rows: 50% 30% 20%;
   grid-template-areas: "imgR2 textsR2" "textR2 textR2" "buttonR2 buttonR2";
 }
 .relevants-written-imgBox {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  width: 100%;
+  height: 100%;
   grid-area: imgR2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.relevants-written-imgBox img {
+  height: 90%;
+  object-fit: contain;
 }
 .relevants-written-texts {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: textsR2;
 }
+.relevants-written-texts-title1 {
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.relevants-written-texts-title2 {
+  font-family: "Merriweather", serif;
+  margin-left: 5px;
+  font-weight: 300;
+}
+.relevants-written-texts-date {
+  margin-top: 8px;
+  display: block;
+  color: #9c9d9e;
+}
 .relevants-written-text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: textR2;
+  color: #9c9d9e;
 }
 .relevants-written-button {
   -ms-grid-row: 3;
